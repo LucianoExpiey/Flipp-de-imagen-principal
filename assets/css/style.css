@@ -12,12 +12,17 @@
 
 .pif-has-gallery .wp-post-image {
 	opacity: 1;
+	width: 100%; /* Asegura que la imagen principal ocupe el 100% del contenedor */
+	height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .pif-has-gallery .wp-post-image--secondary {
 	position: absolute;
-	top: 0; left: 0;
+	top: 0;
+	left: 0;
 	opacity: 0;
+	width: 100%; /* Asegura que la imagen secundaria ocupe el 100% del contenedor */
+	height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* backward compatibility - .woocommerce-LoopProduct-link will probably be removed in future releases */
